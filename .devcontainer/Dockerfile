@@ -3,7 +3,7 @@
 FROM python:3.7.5-stretch
 
 # Set Workspace directory
-ARG WORKSPACE=/workspaces/python_workspace
+ARG WORKSPACE=/workspaces/bestbot
 ENV WORKSPACE=${WORKSPACE}
 
 # Avoid warnings by switching to noninteractive
@@ -11,17 +11,12 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update \
     && apt-get -y install --no-install-recommends apt-utils dialog 2>&1 \
-    #
-    # Install supporting packages
-    # Java major version to match Databricks 7.0 runtime
-    && apt-get -y install git iproute2 procps lsb-release openjdk-8-jdk \
-    #
+    
     # Install poetry
-    && pip --disable-pip-version-check --no-cache-dir install poetry \ 
+    && pip --disable-pip-version-check --no-cache-dir install poetry \
     # Clean up
     && apt-get autoremove -y \
-    && apt-get clean -y \
-    && rm -rf /var/lib/apt/lists/*
+    && apt-get clean -y 
 
 COPY poetry.lock pyproject.toml ${WORKSPACE}/
 RUN cd $WORKSPACE && poetry install --no-root

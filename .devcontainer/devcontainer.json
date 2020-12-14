@@ -1,5 +1,5 @@
 {
-	"name": "python_workspace",
+	"name": "bestbot",
 	"context": "..",
 	"dockerFile": "Dockerfile",
 	"postCreateCommand": "cd $WORKSPACE && poetry install",

@@ -1,0 +1,13 @@
+{
+	"name": "python_workspace",
+	"context": "..",
+	"dockerFile": "Dockerfile",
+	"postCreateCommand": "cd $WORKSPACE && poetry install",
+	"settings": {
+		"terminal.integrated.shell.linux": "/bin/bash",
+	},
+	"extensions": [
+		"ms-python.python",
+		"ms-python.vscode-pylance"
+	]
+}

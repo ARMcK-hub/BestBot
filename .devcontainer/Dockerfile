@@ -3,7 +3,7 @@
 FROM python:3.7.5-stretch
 
 # Set Workspace directory
-ARG WORKSPACE=/workspaces/bestbot
+ARG WORKSPACE=/workspaces/BestBot
 ENV WORKSPACE=${WORKSPACE}
 
 # Avoid warnings by switching to noninteractive

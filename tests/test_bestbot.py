@@ -1,4 +1,4 @@
-from bestbot import __version__
+from BestBot import __version__
 
 
 def test_version():

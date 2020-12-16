@@ -1,0 +1,1 @@
+cart_url = f"https://secure.newegg.com/Shopping/AddToCart.aspx?ItemList={self.id}&Submit=ADD&target=NEWEGGCART"

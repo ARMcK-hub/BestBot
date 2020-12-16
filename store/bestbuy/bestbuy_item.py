@@ -1,6 +1,6 @@
 from core.item import Item
 from core.network.adapter import get_adapter
-from core.find_values import find_values
+from core.utils.find_values import find_values
 from requests import Session
 from json import dump, dumps
 
@@ -52,8 +52,8 @@ class BestBuyItem(Item):
         return self.availability
 
 
-    def cart_add():
-        pass
+    def get_cart_url(self):
+        cart_url = f"https://secure.newegg.com/Shopping/AddToCart.aspx?ItemList={self.id}"
     
     def filter_items():
         pass

@@ -1,9 +1,8 @@
-class EmailContact():
-    
+from core.network.smtp_server import SMTPServer
+
+class EmailContact(SMTPServer):
+
     def __init__(self, notification_data):
         self.contact = notification_data
-
-    # @TODO implement notification method
-    def notify(self):
-        pass
-        # send email to self.email with add to cart link
+        self.gateway = notification_data.split("@")[-1]
+        self.contact_gateway = notification_data

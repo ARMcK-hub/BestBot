@@ -1,9 +1,16 @@
-class PhoneContact():
+from core.network.smtp_server import SMTPServer
+
+class PhoneContact(SMTPServer):
+    gateway = {
+        "verizon": "vtext.com",
+        "at&t": "txt.att.net",
+        "tmobile": "tmomail.net",
+        "sprint": "messaging.sprintpcs.com",
+        "xfinity": "vtext.com",
+        "virgin": "vmobl.com",
+    }
 
     def __init__(self, notification_data):
-        self.contact = notification_data
-
-    # @TODO implement notification method
-    def notify(self):
-        pass
-        # send email to self.email with add to cart link
+        self.contact = notification_data["number"]
+        self.gateway = PhoneContact.gateway[notification_data["carrier"].lower()]
+        self.contact_gateway = self.contact + "@" + self.gateway

@@ -1,4 +1,4 @@
 notification_data = {
-    "email" : "test@ymail.com",
-    "phone" : "867-5309"
+    "email" : "armck@ymail.com",
+    "phone" : {"number" : "6154385609", "carrier" : "verizon"}
 }

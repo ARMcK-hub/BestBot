@@ -7,11 +7,12 @@ Reference: https://github.com/Hari-Nagarajan/fairgame/blob/5e0f60f39dedf02ff6bec
 from data.product import product_data
 from data.notifications import notification_data
 
-from time import sleep
 from store.bestbuy.bestbuy_item import BestBuyItem
-from core.network.adapter import get_adapter
 from core.contact_methods.email_contact import EmailContact
 from core.contact_methods.phone_contact import PhoneContact
+from core.utils.next_time import next_time
+from core.network.adapter import get_adapter
+from time import time
 
 
 # lookup notify info & create notify objects
@@ -34,13 +35,23 @@ for product in product_data:
     product_list.append(item)
 
 # loop executors
-for product in product_list:
-    product.get_page()
-    product.parse_page()
-    product.check_availability()
-    if product.get_availability() == True:
-        print(f"adding {product.Name} to cart")
-    else:
-        print(f"{product.Name} OOS")
-    sleep(5)
+while True:
+    loop_start = int(time())
 
+    # 
+    for product in product_list:
+        product.get_page()
+        product.parse_page()
+        product.check_availability()
+        if product.get_availability() == True:
+            print(f"ADDING TO CART:   {product.Name}")
+        else:
+            print(f"OUT OF STOCK:   {product.Name}")
+            # c = PhoneContact("6154385609")
+            # c.construct_message()
+            # c.notify()
+
+    # wait for next sys minute
+    if time() < loop_start + 60:
+        print("Starting Timer")
+        next_time(60)

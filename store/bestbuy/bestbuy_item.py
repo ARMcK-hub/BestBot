@@ -53,7 +53,7 @@ class BestBuyItem(Item):
 
 
     def get_cart_url(self):
-        cart_url = f"https://secure.newegg.com/Shopping/AddToCart.aspx?ItemList={self.id}"
+        self.cart_url = f"https://www.bestbuy.com/site/{self.id}.p?skuId={self.id}"
     
     def filter_items():
         pass

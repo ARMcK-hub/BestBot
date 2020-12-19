@@ -10,8 +10,12 @@ class SMTPServer():
     port = 587
 
     def construct_message(self, product):
-        
-        self.message = "email test"
+        product.get_cart_url()
+        self.message = f"""
+        ONE SALE!!! - {product.Name}
+
+        URL - {product.cart_url}
+        """
 
     def notify(self):
         server = SMTP(SMTPServer.smtp, SMTPServer.port)

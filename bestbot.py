@@ -61,8 +61,8 @@ try:
                 print(f"OUT OF STOCK:   {product.Name}")
 
         # wait for next sys minute
-        if time() < loop_start + 60:
-            print("Starting Timer")
+        if (time() < loop_start + 60) or (int(time()) % 60 == 0) :
+            print("Entering Wait")
             next_time(60)
 
 except ProductFoundException:

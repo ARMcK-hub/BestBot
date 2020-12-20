@@ -17,6 +17,13 @@ class SMTPServer():
         URL - {product.cart_url}
         """
 
+    def construct_except_message(self, exception):
+        self.message = f"""
+        ---Script Failure---
+
+        Exception Logged: {exception}
+        """
+
     def notify(self):
         server = SMTP(SMTPServer.smtp, SMTPServer.port)
         server.ehlo()

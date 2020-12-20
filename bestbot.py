@@ -22,7 +22,7 @@ class ProductFoundException(Exception):
 # initializing runtime log
 clear_log()
 sleep(2)
-write_log("init")
+write_log("Script Initiated")
 
 
 # lookup notify info & create notify objects
@@ -35,7 +35,7 @@ for contact_method in notification_data:
     else:
         raise Exception("Invalid contact method input. Check data->notifications.py to ensure all methods are 'email' or 'phone'.")
     contact_list.append(contact)
-write_log("set_contacts", [c.contact for c in contact_list])
+write_log("Contacts Set", [c.contact for c in contact_list])
 
 
 # lookup products info & create product objects
@@ -44,14 +44,14 @@ product_list = []
 for product in product_data:
     item = BestBuyItem(product_data[product])
     product_list.append(item)
-write_log("set_products", [p.Name for p in product_list])
+write_log("Products Set", [p.Name for p in product_list])
 
 
 # loop executors
 try:
     while True:
         loop_start = int(time())
-        write_log("loop")
+        write_log("Started Loop")
 
         # looking through product list for availability
         for product in product_list:
@@ -59,26 +59,30 @@ try:
             product.parse_page()
             product.check_availability()
             if product.get_availability() == True:
-                print(f"ADDING TO CART:   {product.Name}")
-                write_log("stock", product.Name)
+                write_log("IN STOCK!", product.Name)
 
                 # sending notifications
                 for contact in contact_list:
-                    print(f"Sending notification to {contact.contact}")
-                    write_log("contact", contact.contact)
+                    write_log("Notification Sent", contact.contact)
                     contact.construct_message(product)
                     contact.notify()
                 raise ProductFoundException
             else:
-                print(f"OUT OF STOCK:   {product.Name}")
-                write_log("oos", product.Name)
+                write_log("OOS", product.Name)
 
         # wait for next sys minute
         if (time() < loop_start + 60) or (int(time()) % 60 == 0) :
-            write_log("wait")
-            print(f"Entering Wait @ {datetime.utcfromtimestamp(time()).strftime('%Y-%m-%d %H:%M:%S')}")
+            write_log("Wait Initiated")
             next_time(60)
 
+# handeling script termination on product found
 except ProductFoundException:
-    print(f"Terminating Script @ {datetime.utcfromtimestamp(time()).strftime('%Y-%m-%d %H:%M:%S')}")
-    write_log("terminate")
+    write_log("Terminating Script", "Product Found")
+
+# handeling script failure notification
+except Exception as e:
+    write_log("Terminating Script", e)
+    for contact in contact_list:
+        write_log("Notification Sent", contact.contact)
+        contact.construct_except_message(e)
+        contact.notify()

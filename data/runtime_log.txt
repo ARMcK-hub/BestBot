@@ -1,0 +1,68 @@
+2020-12-20 07:23:59   :   Script Initiated
+2020-12-20 07:23:59   :   Contacts Set - ['armck@ymail.com', '6154385609']
+2020-12-20 07:23:59   :   Products Set - ['NVIDIA GeForce RTX 3070 8GB GDDR6 PCI Express 4.0 Graphics Card - Dark Platinum and Black', 'NVIDIA GeForce RTX 3080 10GB GDDR6X PCI Express 4.0 Graphics Card - Titanium and Black', 'NVIDIA GeForce RTX 3060 Ti 8GB GDDR6 PCI Express 4.0 Graphics Card - Steel and Black']
+2020-12-20 07:23:59   :   Started Loop
+2020-12-20 07:23:59   :   OOS - NVIDIA GeForce RTX 3070 8GB GDDR6 PCI Express 4.0 Graphics Card - Dark Platinum and Black
+2020-12-20 07:24:00   :   OOS - NVIDIA GeForce RTX 3080 10GB GDDR6X PCI Express 4.0 Graphics Card - Titanium and Black
+2020-12-20 07:24:00   :   OOS - NVIDIA GeForce RTX 3060 Ti 8GB GDDR6 PCI Express 4.0 Graphics Card - Steel and Black
+2020-12-20 07:24:00   :   Wait Initiated
+2020-12-20 07:24:01   :   Started Loop
+2020-12-20 07:24:01   :   OOS - NVIDIA GeForce RTX 3070 8GB GDDR6 PCI Express 4.0 Graphics Card - Dark Platinum and Black
+2020-12-20 07:24:01   :   OOS - NVIDIA GeForce RTX 3080 10GB GDDR6X PCI Express 4.0 Graphics Card - Titanium and Black
+2020-12-20 07:24:02   :   OOS - NVIDIA GeForce RTX 3060 Ti 8GB GDDR6 PCI Express 4.0 Graphics Card - Steel and Black
+2020-12-20 07:24:02   :   Wait Initiated
+2020-12-20 07:25:01   :   Started Loop
+2020-12-20 07:25:01   :   OOS - NVIDIA GeForce RTX 3070 8GB GDDR6 PCI Express 4.0 Graphics Card - Dark Platinum and Black
+2020-12-20 07:25:01   :   OOS - NVIDIA GeForce RTX 3080 10GB GDDR6X PCI Express 4.0 Graphics Card - Titanium and Black
+2020-12-20 07:25:02   :   OOS - NVIDIA GeForce RTX 3060 Ti 8GB GDDR6 PCI Express 4.0 Graphics Card - Steel and Black
+2020-12-20 07:25:02   :   Wait Initiated
+2020-12-20 07:26:01   :   Started Loop
+2020-12-20 07:26:01   :   OOS - NVIDIA GeForce RTX 3070 8GB GDDR6 PCI Express 4.0 Graphics Card - Dark Platinum and Black
+2020-12-20 07:26:01   :   OOS - NVIDIA GeForce RTX 3080 10GB GDDR6X PCI Express 4.0 Graphics Card - Titanium and Black
+2020-12-20 07:26:02   :   OOS - NVIDIA GeForce RTX 3060 Ti 8GB GDDR6 PCI Express 4.0 Graphics Card - Steel and Black
+2020-12-20 07:26:02   :   Wait Initiated
+2020-12-20 07:27:01   :   Started Loop
+2020-12-20 07:27:01   :   OOS - NVIDIA GeForce RTX 3070 8GB GDDR6 PCI Express 4.0 Graphics Card - Dark Platinum and Black
+2020-12-20 07:27:01   :   OOS - NVIDIA GeForce RTX 3080 10GB GDDR6X PCI Express 4.0 Graphics Card - Titanium and Black
+2020-12-20 07:27:02   :   OOS - NVIDIA GeForce RTX 3060 Ti 8GB GDDR6 PCI Express 4.0 Graphics Card - Steel and Black
+2020-12-20 07:27:02   :   Wait Initiated
+2020-12-20 07:28:01   :   Started Loop
+2020-12-20 07:28:01   :   OOS - NVIDIA GeForce RTX 3070 8GB GDDR6 PCI Express 4.0 Graphics Card - Dark Platinum and Black
+2020-12-20 07:28:01   :   OOS - NVIDIA GeForce RTX 3080 10GB GDDR6X PCI Express 4.0 Graphics Card - Titanium and Black
+2020-12-20 07:28:02   :   OOS - NVIDIA GeForce RTX 3060 Ti 8GB GDDR6 PCI Express 4.0 Graphics Card - Steel and Black
+2020-12-20 07:28:02   :   Wait Initiated
+2020-12-20 07:29:01   :   Started Loop
+2020-12-20 07:29:01   :   OOS - NVIDIA GeForce RTX 3070 8GB GDDR6 PCI Express 4.0 Graphics Card - Dark Platinum and Black
+2020-12-20 07:29:01   :   OOS - NVIDIA GeForce RTX 3080 10GB GDDR6X PCI Express 4.0 Graphics Card - Titanium and Black
+2020-12-20 07:29:02   :   OOS - NVIDIA GeForce RTX 3060 Ti 8GB GDDR6 PCI Express 4.0 Graphics Card - Steel and Black
+2020-12-20 07:29:02   :   Wait Initiated
+2020-12-20 07:30:01   :   Started Loop
+2020-12-20 07:30:01   :   OOS - NVIDIA GeForce RTX 3070 8GB GDDR6 PCI Express 4.0 Graphics Card - Dark Platinum and Black
+2020-12-20 07:30:02   :   OOS - NVIDIA GeForce RTX 3080 10GB GDDR6X PCI Express 4.0 Graphics Card - Titanium and Black
+2020-12-20 07:30:02   :   OOS - NVIDIA GeForce RTX 3060 Ti 8GB GDDR6 PCI Express 4.0 Graphics Card - Steel and Black
+2020-12-20 07:30:02   :   Wait Initiated
+2020-12-20 07:31:01   :   Started Loop
+2020-12-20 07:31:01   :   OOS - NVIDIA GeForce RTX 3070 8GB GDDR6 PCI Express 4.0 Graphics Card - Dark Platinum and Black
+2020-12-20 07:31:01   :   OOS - NVIDIA GeForce RTX 3080 10GB GDDR6X PCI Express 4.0 Graphics Card - Titanium and Black
+2020-12-20 07:31:02   :   OOS - NVIDIA GeForce RTX 3060 Ti 8GB GDDR6 PCI Express 4.0 Graphics Card - Steel and Black
+2020-12-20 07:31:02   :   Wait Initiated
+2020-12-20 07:32:01   :   Started Loop
+2020-12-20 07:32:01   :   OOS - NVIDIA GeForce RTX 3070 8GB GDDR6 PCI Express 4.0 Graphics Card - Dark Platinum and Black
+2020-12-20 07:32:02   :   OOS - NVIDIA GeForce RTX 3080 10GB GDDR6X PCI Express 4.0 Graphics Card - Titanium and Black
+2020-12-20 07:32:02   :   OOS - NVIDIA GeForce RTX 3060 Ti 8GB GDDR6 PCI Express 4.0 Graphics Card - Steel and Black
+2020-12-20 07:32:02   :   Wait Initiated
+2020-12-20 07:33:01   :   Started Loop
+2020-12-20 07:33:01   :   OOS - NVIDIA GeForce RTX 3070 8GB GDDR6 PCI Express 4.0 Graphics Card - Dark Platinum and Black
+2020-12-20 07:33:01   :   OOS - NVIDIA GeForce RTX 3080 10GB GDDR6X PCI Express 4.0 Graphics Card - Titanium and Black
+2020-12-20 07:33:02   :   OOS - NVIDIA GeForce RTX 3060 Ti 8GB GDDR6 PCI Express 4.0 Graphics Card - Steel and Black
+2020-12-20 07:33:02   :   Wait Initiated
+2020-12-20 07:34:01   :   Started Loop
+2020-12-20 07:34:01   :   OOS - NVIDIA GeForce RTX 3070 8GB GDDR6 PCI Express 4.0 Graphics Card - Dark Platinum and Black
+2020-12-20 07:34:01   :   OOS - NVIDIA GeForce RTX 3080 10GB GDDR6X PCI Express 4.0 Graphics Card - Titanium and Black
+2020-12-20 07:34:02   :   OOS - NVIDIA GeForce RTX 3060 Ti 8GB GDDR6 PCI Express 4.0 Graphics Card - Steel and Black
+2020-12-20 07:34:02   :   Wait Initiated
+2020-12-20 07:35:01   :   Started Loop
+2020-12-20 07:35:01   :   OOS - NVIDIA GeForce RTX 3070 8GB GDDR6 PCI Express 4.0 Graphics Card - Dark Platinum and Black
+2020-12-20 07:35:01   :   OOS - NVIDIA GeForce RTX 3080 10GB GDDR6X PCI Express 4.0 Graphics Card - Titanium and Black
+2020-12-20 07:35:02   :   OOS - NVIDIA GeForce RTX 3060 Ti 8GB GDDR6 PCI Express 4.0 Graphics Card - Steel and Black
+2020-12-20 07:35:02   :   Wait Initiated

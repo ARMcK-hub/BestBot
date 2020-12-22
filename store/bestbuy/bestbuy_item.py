@@ -17,6 +17,10 @@ class BestBuyItem(Item):
 
     def __init__(self, product_data):
         self.store_url = "https://www.bestbuy.com/api/tcfb/model.json?paths=%5B%5B%22shop%22%2C%22scds%22%2C%22v2%22%2C%22page%22%2C%22tenants%22%2C%22bbypres%22%2C%22pages%22%2C%22globalnavigationv5sv%22%2C%22header%22%5D%2C%5B%22shop%22%2C%22buttonstate%22%2C%22v5%22%2C%22item%22%2C%22skus%22%2C{}%2C%22conditions%22%2C%22NONE%22%2C%22destinationZipCode%22%2C%22%2520%22%2C%22storeId%22%2C%22%2520%22%2C%22context%22%2C%22cyp%22%2C%22addAll%22%2C%22false%22%5D%5D&method=get"
+        BEST_BUY_PDP_URL = "https://api.bestbuy.com/click/5592e2b895800000/{sku}/pdp"
+        BEST_BUY_ADD_TO_CART_API_URL = "https://www.bestbuy.com/cart/api/v1/addToCart"
+        BEST_BUY_CHECKOUT_URL = "https://www.bestbuy.com/checkout/c/orders/{order_id}/"
+        
         super(BestBuyItem, self).__init__(product_data)
 
     def get_page(self):
@@ -53,7 +57,7 @@ class BestBuyItem(Item):
 
 
     def get_cart_url(self):
-        self.cart_url = f"https://www.bestbuy.com/site/{self.id}.p?skuId={self.id}"
+        self.cart_url = f"https://api.bestbuy.com/click/5592e2b895800000/{self.id}/cart"
     
     def filter_items():
         pass

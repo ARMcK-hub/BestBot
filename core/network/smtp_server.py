@@ -12,9 +12,8 @@ class SMTPServer():
     def construct_message(self, product):
         product.get_cart_url()
         self.message = f"""
-        ONE SALE!!! - {product.Name}
-
-        URL - {product.cart_url}
+        Product:  {product.alias}
+        URL:  {product.cart_url}
         """
 
     def construct_except_message(self, exception):

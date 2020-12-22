@@ -18,4 +18,4 @@ def write_log(scope, message = ""):
             msg = f"{time_stamp}   :   {scope} - {message}"
         
         print(msg)
-        file.writelines(msg)
+        file.writelines(msg + "\n")

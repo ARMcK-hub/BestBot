@@ -2,6 +2,10 @@
 
 <!--
 
+To Execute:
+docker start <container_name>
+docker exec -it <container_name> python bestbot.py
+
 0. lookup notify data -> err if none
 1. for each, create notify objects
 - notify method (phone:number, email: @)

@@ -1,2 +1,0 @@
-u = 'mailtomeapp'
-p = 'mxfhygtrgphdjtet'

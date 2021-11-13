@@ -1,7 +1,7 @@
 from datetime import datetime
 from time import time
 
-runtime_log = "data/runtime_log.txt"
+runtime_log = "logs/runtime_log.log"
 
 def clear_log():
     open(runtime_log, "w").close()

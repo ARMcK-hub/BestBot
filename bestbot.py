@@ -4,20 +4,19 @@ Author: Drew McKinney
 Reference: https://github.com/Hari-Nagarajan/fairgame/blob/5e0f60f39dedf02ff6bec9a1131d6ea24c8553ec/utils/json_utils.py#L4
 12/12/2020
 """
-from data.product import product_data
-from data.notifications import notification_data
 
 from store.bestbuy.bestbuy_item import BestBuyItem
-from core.contact_methods.email_contact import EmailContact
-from core.contact_methods.phone_contact import PhoneContact
-from core.utils.next_time import next_time
-from core.network.adapter import get_adapter
+from core.contact_methods import EmailContact, PhoneContact
+from core.utils import ConfigurationProvider, write_log, clear_log, next_time
 from time import time, sleep
-from datetime import datetime
-from core.utils.log import clear_log, write_log
 
 class ProductFoundException(Exception):
     pass
+
+Config = ConfigurationProvider().config
+
+product_data = Config["products"]
+notification_data = Config["contacts"]
 
 # initializing runtime log
 clear_log()
@@ -42,9 +41,9 @@ write_log("Contacts Set", [c.contact for c in contact_list])
 # @TODO create strat per item
 product_list = []
 for product in product_data:
-    item = BestBuyItem(product_data[product])
+    item = BestBuyItem(product)
     product_list.append(item)
-write_log("Products Set", [p.Name for p in product_list])
+write_log("Products Set", [p.name for p in product_list])
 
 
 # loop executors
@@ -59,7 +58,7 @@ try:
             product.parse_page()
             product.check_availability()
             if product.get_availability() == True:
-                write_log("IN STOCK!", product.Name)
+                write_log("IN STOCK!", product.name)
 
                 # sending notifications
                 for contact in contact_list:
@@ -68,7 +67,7 @@ try:
                     contact.notify()
                 raise ProductFoundException
             else:
-                write_log("OOS", product.Name)
+                write_log("OOS", product.name)
 
         # wait for next sys minute
         if (time() < loop_start + 60) or (int(time()) % 60 == 0) :

@@ -1,0 +1,89 @@
+{
+    "$schema": "http://json-schema.org/schema",
+    "title": "BestBot Config",
+    "description": "BestBot Config Schema",
+    "type": "object",
+    "properties": {
+        "smtp_server": {
+            "description": "SMTP Server config",
+            "type": "object",
+            "properties": {
+                "user": {
+                    "description": "Username of the Gmail SMTP Account",
+                    "type": "string"
+                },
+                "password": {
+                    "description": "SMTP Account Password",
+                    "type": "string"
+                }
+            }
+        },
+        "contacts": {
+            "description": "Contacts to send notifications to",
+            "type": "object",
+            "properties": {
+                "email": {
+                    "description": "Email Address Contact",
+                    "type": "string",
+                    "format": "email"
+                },
+                "phone": {
+                    "description": "Mobile Phone Contact for Text Messages",
+                    "type": "object",
+                    "properties": {
+                        "number": {
+                            "description": "Phone Number with Area Code",
+                            "type": "string"
+                        },
+                        "carrier": {
+                            "description": "Phone Carrier",
+                            "type": "string",
+                            "examples": [
+                                "verizon",
+                                "at&t",
+                                "tmobile",
+                                "sprint",
+                                "xfinity",
+                                "virgin"
+                            ]
+                        }
+                    },
+                    "required": ["number", "carrier"]
+                }
+            }
+        },
+        "products": {
+            "description": "List of Products",
+            "type": "array",
+            "items": {
+                "description": "Product Item",
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "description": "Name of Product as found on the webstore",
+                        "type": "string"
+                    },
+                    "alias": {
+                        "description": "Short alias identifier for the product that can be used by the system Logger",
+                        "type": "string"
+                    },
+                    "id": {
+                        "description": "ID of the product, identifiable on the webstore - aka SKU",
+                        "type": "string"
+                    },
+                    "model": {
+                        "description": "Model of the product, identifiable on the webstore for product validation",
+                        "type": "string"
+                    },
+                    "store": {
+                        "description": "Name of the Webstore",
+                        "type": "string"
+                    }
+                },
+                "required": ["name", "alias", "id", "model", "store"]
+            }
+            
+        }
+    },
+    "required": ["contacts", "products"]
+}

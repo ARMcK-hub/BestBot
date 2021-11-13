@@ -1,6 +1,6 @@
-from core.item import Item
-from core.network.adapter import get_adapter
-from core.utils.find_values import find_values
+from core import Item
+from core.network import get_adapter
+from core.utils import find_values
 from requests import Session
 from json import dump, dumps
 

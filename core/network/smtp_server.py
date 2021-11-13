@@ -1,13 +1,16 @@
 from smtplib import SMTP
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
-from core.network.g import p, u
 
 
 
 class SMTPServer():
     smtp = "smtp.gmail.com"
     port = 587
+
+    def __init__(self, smtp_user: str, smtp_password: str) -> None:
+        self.user = smtp_user
+        self.password = smtp_password
 
     def construct_message(self, product):
         product.get_cart_url()
@@ -27,15 +30,15 @@ class SMTPServer():
         server = SMTP(SMTPServer.smtp, SMTPServer.port)
         server.ehlo()
         server.starttls()
-        server.login(u, p)
+        server.login(self.user, self.password)
         msg = MIMEMultipart()
-        msg['From'] = u
+        msg['From'] = self.user
         msg['To'] = self.contact_gateway
 
         body = self.message
 
         msg.attach(MIMEText(body, 'plain'))
         message = msg.as_string()
-        server.sendmail(u, self.contact_gateway, message)
+        server.sendmail(self.user, self.contact_gateway, message)
 
         server.quit()

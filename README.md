@@ -1,4 +1,5 @@
 # BestBot
+A hastily written Webscan Bot that notifies when a product is in stock on a webstore.
 
 <!--
 

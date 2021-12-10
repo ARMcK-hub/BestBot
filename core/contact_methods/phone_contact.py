@@ -10,7 +10,8 @@ class PhoneContact(SMTPServer):
         "virgin": "vmobl.com",
     }
 
-    def __init__(self, notification_data):
+    def __init__(self, notification_data, Config):
         self.contact = notification_data["number"]
         self.gateway = PhoneContact.gateway[notification_data["carrier"].lower()]
         self.contact_gateway = self.contact + "@" + self.gateway
+        super().__init__(Config["smtp_server"]["user"], Config["smtp_server"]["password"])

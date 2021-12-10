@@ -28,9 +28,9 @@ write_log("Script Initiated")
 contact_list = []
 for contact_method in notification_data:
     if contact_method == "email":
-        contact = EmailContact(notification_data[contact_method])
+        contact = EmailContact(notification_data[contact_method], Config)
     elif contact_method == "phone":
-        contact = PhoneContact(notification_data[contact_method])
+        contact = PhoneContact(notification_data[contact_method], Config)
     else:
         raise Exception("Invalid contact method input. Check data->notifications.py to ensure all methods are 'email' or 'phone'.")
     contact_list.append(contact)

@@ -2,6 +2,6 @@ import sys
 
 def test_python_path():    
     paths = sys.path
-    workspace = '/workspaces/BestBot'
+    workspace = '/workspaces/bestbot'
 
     assert workspace in paths

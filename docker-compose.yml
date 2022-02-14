@@ -5,5 +5,5 @@ services:
       dockerfile: ./.devcontainer/Dockerfile
       context: ./
     volumes:
-      - .:/workspaces/BestBot:cached
+      - .:/workspaces/bestbot:cached
     command: /bin/sh -c "while sleep 1000; do :; done"

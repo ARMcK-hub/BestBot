@@ -62,5 +62,7 @@ Start the application by executing the script with python inside of the containe
 ##### Logs:
 Logs can be viewed in runtime via executing the `rlog.py` script, which follows the stdout output from the bestbot script. `docker exec -it <container_name> poetry run python rlog.py`.
 
+Alternatively logs can be printed via executing the `plog.py` script, which simply prints their contents. `docker exec -it <container_name> poetry run python plog.py`.
+
 ##### Configuration:
 Changing the product watch configuration can be completed by modifying the config file (`/config/config.json`).

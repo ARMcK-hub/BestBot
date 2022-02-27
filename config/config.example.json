@@ -1,0 +1,37 @@
+{
+    "$schema": "./schema/config.schema.json",
+    "smtp_server": {
+        "user": "mysmtpserver",
+        "password": "woah, not so fast"
+    },
+    "contacts": {
+        "email" : "test@ytestmail.com",
+        "phone" : {
+            "number" : "8675309",
+            "carrier": "at&t"
+        }
+    },
+    "products": [
+        {
+            "name": "NVIDIA GeForce RTX 3070 8GB GDDR6 PCI Express 4.0 Graphics Card - Dark Platinum and Black",
+            "alias": "3070FE",
+            "id": "6429442",
+            "model": "9001G1422510000",
+            "store": "BestBuy"
+        },
+        {
+            "name": "NVIDIA GeForce RTX 3080 10GB GDDR6X PCI Express 4.0 Graphics Card - Titanium and Black",
+            "alias": "3080FE",
+            "id": "6429440",
+            "model": "9001G1332530000",
+            "store": "BestBuy"
+        },
+        {
+            "name": "NVIDIA GeForce RTX 3060 Ti 8GB GDDR6 PCI Express 4.0 Graphics Card - Steel and Black",
+            "alias": "3060TIFE",
+            "id": "6439402",
+            "model": "900-1G142-2520-000",
+            "store": "BestBuy"
+        }
+    ]
+}

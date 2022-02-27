@@ -1,9 +1,4 @@
-runtime_log = "data/runtime_log.txt"
-
-# while True:
-#     with open(runtime_log, "r") as file:
-#         for line in file:
-#             print(line)
+runtime_log = "logs/runtime_log.log"
 
 import time
 import os
@@ -27,7 +22,7 @@ def follow(thefile):
 
 if __name__ == '__main__':
     
-    logfile = open("data/runtime_log.txt","r")
+    logfile = open("logs/runtime_log.log","r")
     loglines = follow(logfile)
     # iterate over the generator
     for line in loglines:

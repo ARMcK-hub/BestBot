@@ -1,30 +1,31 @@
+FROM armck/python-base:latest
 
-# Pinned to version supported in Databricks 7.0 runtime https://docs.microsoft.com/en-us/azure/databricks/release-notes/runtime/7.0
-FROM python:3.7.5-stretch
+# ----- Environment Setup -----
 
 # Set Workspace directory
-ARG WORKSPACE=/workspaces/BestBot
+ARG WORKSPACE=/workspaces/bestbot
 ENV WORKSPACE=${WORKSPACE}
 
 # Avoid warnings by switching to noninteractive
 ENV DEBIAN_FRONTEND=noninteractive
 
-RUN apt-get update \
-    && apt-get -y install --no-install-recommends apt-utils dialog 2>&1 \
-    
-    # Install poetry
-    && pip --disable-pip-version-check --no-cache-dir install poetry \
+# ----- Primary Installs -----
+# uses tmp install directory to keep from caching install downloads
+
+RUN mkdir /tmp/dockerinstall \
+    && cd /tmp/dockerinstall \
+    # Installs
     # Clean up
     && apt-get autoremove -y \
-    && apt-get clean -y 
+    && apt-get clean -y \
+    && rm -rf /var/lib/apt/lists/* \
+    && rm -rf /tmp/dockerinstall
 
 COPY poetry.lock pyproject.toml ${WORKSPACE}/
 RUN cd $WORKSPACE && poetry install --no-root
 
+# ----- Workspace Prep -----
 WORKDIR ${WORKSPACE}
 
 # Switch back to dialog for any ad-hoc use of apt-get
 ENV DEBIAN_FRONTEND=dialog
-
-# Adding workspace to the PYTHONPATH
-ENV PYTHONPATH ${WORKSPACE}

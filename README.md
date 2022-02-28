@@ -40,21 +40,19 @@
 <br>
 
 <!-- Description -->
-# BestBot
 A hastily written Webscan Bot that notifies when a product is in stock on a webstore.
-
 
 
 ### Quick Start
 
-0. ###### Setup & Configure the project:
+1. ##### Setup & Configure the project:
 A sample configuration is provided at `/config/config.example.json`. This file should be updated to desired configuration and renamed to `/config/config.json`.
 
-1. ###### Start a Docker Container:
+2. ##### Start a Docker Container:
 Start an associated container built from the `./.devcontainer/Dockerfile` in this project.
 The container can be started after being built via the `docker start <container_name>` command.
 
-2. ###### Start the Script:
+3. ##### Start the Script:
 Start the application by executing the script with python inside of the container, as such: `docker exec -it <container_name> poetry run python bestbot.py`. Note that poetry is the virtual environment that the script runs in.
 
 ### Usage

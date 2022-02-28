@@ -10,6 +10,16 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# universal secrets
+*secret*
+*key*
+*local*
+
+# logs
+*.log
+*.db
+
+
 # C extensions
 *.so
 

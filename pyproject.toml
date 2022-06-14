@@ -2,7 +2,7 @@
 name = "bestbot"
 version = "0.1.0"
 description = ""
-authors = ["armck-hub"]
+authors = ["armckinney"]
 
 [tool.poetry.dependencies]
 python = "^3.7"

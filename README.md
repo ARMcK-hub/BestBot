@@ -8,22 +8,22 @@
     </p>
     <p>
     <!-- Shields -->
-        <a href="https://github.com/armck-hub/bestbot/LICENSE">
-            <img alt="License" src="https://img.shields.io/github/license/armck-hub/bestbot.svg" />
+        <a href="https://github.com/armckinney/bestbot/LICENSE">
+            <img alt="License" src="https://img.shields.io/github/license/armckinney/bestbot.svg" />
         </a>
-        <a href="https://github.com/armck-hub/bestbot/actions">
-            <img alt="Tests Passing" src="https://github.com/armck-hub/bestbot/workflows/CI/badge.svg" />
+        <a href="https://github.com/armckinney/bestbot/actions">
+            <img alt="Tests Passing" src="https://github.com/armckinney/bestbot/workflows/CI/badge.svg" />
         </a>
-        <a href="https://codecov.io/gh/armck-hub/bestbot">
-            <img alt="Code Coverage" src="https://codecov.io/gh/armck-hub/bestbot/branch/master/graph/badge.svg" />
+        <a href="https://codecov.io/gh/armckinney/bestbot">
+            <img alt="Code Coverage" src="https://codecov.io/gh/armckinney/bestbot/branch/master/graph/badge.svg" />
         </a>
-        <a href="https://github.com/armck-hub/bestbot/issues">
-            <img alt="Issues" src="https://img.shields.io/github/issues/armck-hub/bestbot" />
+        <a href="https://github.com/armckinney/bestbot/issues">
+            <img alt="Issues" src="https://img.shields.io/github/issues/armckinney/bestbot" />
         </a>
-        <a href="https://github.com/armck-hub/bestbot/pulls">
-            <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/armck-hub/bestbot" />
+        <a href="https://github.com/armckinney/bestbot/pulls">
+            <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/armckinney/bestbot" />
         </a>
-        <a href="https://stackshare.io/armck-hub/bestbot">
+        <a href="https://stackshare.io/armckinney/bestbot">
             <img alt="StackShare.io" src="http://img.shields.io/badge/tech-stack-0690fa.svg?label=StackShare.io">
         </a>
     </p>
@@ -31,9 +31,9 @@
     <!-- Links -->
         <a href="#demo">View Demo</a>
         ·
-        <a href="https://github.com/armck-hub/bestbot/issues/new/choose">Report Bug</a>
+        <a href="https://github.com/armckinney/bestbot/issues/new/choose">Report Bug</a>
         ·
-        <a href="https://github.com/armck-hub/bestbot/issues/new/choose">Request Feature</a>
+        <a href="https://github.com/armckinney/bestbot/issues/new/choose">Request Feature</a>
     </p>
 </div>
 <br>

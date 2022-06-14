@@ -23,7 +23,7 @@
         <a href="https://github.com/armckinney/bestbot/pulls">
             <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/armckinney/bestbot" />
         </a>
-        <a href="https://stackshare.io/armckinney/bestbot">
+        <a href="https://stackshare.io/armck/bestbot">
             <img alt="StackShare.io" src="http://img.shields.io/badge/tech-stack-0690fa.svg?label=StackShare.io">
         </a>
     </p>
